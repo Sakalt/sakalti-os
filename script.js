@@ -146,11 +146,3 @@ function addWindowControls(appId) {
 ['notepad', 'weather', 'calculator', 'gallery', 'music', 'browser', 'settings', 'clock'].forEach(appId => {
     addWindowControls(appId);
 });
-
-window.onload = function() {
-    const bootScreen = document.getElementById('bootScreen');
-    setTimeout(() => {
-        bootScreen.style.display = 'none';
-        // メインOSのロード
-    }, 3000); // 3秒間表示
-};
